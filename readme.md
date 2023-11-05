@@ -112,4 +112,4 @@ Os pull requests são bem-vindos. Para mudanças importantes, abra um problema p
 Certifique-se de atualizar os testes conforme apropriado.
 
 ## License
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Eltierry/Desafio-Dio-TDD-TestesUnitarios/blob/main/license)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Eltierry/Desafio-Dio-TDD-TestesUnitarios/blob/main/licence)
