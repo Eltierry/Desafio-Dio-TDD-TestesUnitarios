@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ValidacaoCaracteres.Services;
@@ -14,37 +15,31 @@ public class Validacoes
 
     public bool SomenteLetras(string entrada)
     {
-        foreach (char c in entrada)
+        foreach (var c in entrada)
         {
-            if (!char.IsLetter(c))
-            {
-                return false;
-            }
-        };
+            if (!"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".Contains(c)) 
+                return false;  
+        } 
         return true;
     }
 
     public bool SomenteLetrasMaiusculas(string entrada)
     {
-        foreach (char c in entrada)
+        foreach (var c in entrada)
         {
-            if (!char.IsUpper(c))
-            {
-                return false;
-            }
-        };
+            if (!"ABCDEFGHIJKLMNOPQRSTUVWXYZ".Contains(c)) 
+                return false;  
+        } 
         return true;
     }
 
     public bool SomenteLetrasMinusculas(string entrada)
     {
-        foreach (char c in entrada)
+        foreach (var c in entrada)
         {
-            if (!char.IsLower(c))
-            {
-                return false;
-            }
-        }
+            if (!"abcdefghijklmnopqrstuvwxyz".Contains(c)) 
+                return false;  
+        } 
         return true;
     }
 }
